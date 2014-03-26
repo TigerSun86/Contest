@@ -2,7 +2,7 @@ import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Transmitters1916 {
     public static void main (String[] args) {
         Scanner s = new Scanner(System.in);
         while (s.hasNextInt()){

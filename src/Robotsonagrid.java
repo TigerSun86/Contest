@@ -19,8 +19,13 @@ public class Robotsonagrid {
             for (int j = 0; j < n; j++) {
                 if ((BLOCK != (tiles[i][j])) && (reachable[i][j] > 0)) {
                     checkNextStep(tiles, reachable, i, j, "right");
-                    checkNextStep(tiles, reachable, i, j, "dow.
-            System.out.println((reachable[n-1][n-1] % Integer.MAX_VALUE));
+                    checkNextStep(tiles, reachable, i, j, "down");
+                }
+            }
+        }
+        
+        if (reachable[n-1][n-1] > 0) {
+            System.out.println(reachable[n-1][n-1]);
         } else {
             char[][] moved = new char[n][n];
             // the x in direction is the row in the graph, so it's the second in
